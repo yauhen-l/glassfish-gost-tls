@@ -30,7 +30,7 @@ HOWTO:
 
 3) Указать имя класса для listener-a:
 
-        asadmin> set configs.config.config-name.network-config.protocols.protocol.listener-name.ssl.classname=by.iba.web.glassfish.GlassfishGostTLS
+        asadmin> set configs.config.%CONFIG_NAME%.network-config.protocols.protocol.%LISTENER_NAME%.ssl.classname=by.iba.web.glassfish.GlassfishGostTLS
 
 Либо то же самое,но в файле domain.xml (конфигурация домена Glassfish). В итоге в файле domain.xml будет что-то такое:
 
