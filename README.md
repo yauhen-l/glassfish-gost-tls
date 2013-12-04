@@ -53,6 +53,6 @@ HOWTO:
         <jvm-options>-Djavax.net.ssl.trustStorePassword=123456</jvm-options>
 
 
-Внимение!!!
+Внимание!!!
 
 Для ОС Windows везде обращаем внимение на слэши в путях к файлам.
