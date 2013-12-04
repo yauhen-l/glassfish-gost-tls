@@ -9,7 +9,6 @@ HOWTO:
 
         protocol=GostTLS        // не трогаем
         protocols=GostTLS       // не трогаем
-        clientauth=true         // true - для двусторонней аутентификации
         algorithm=GostX509      // не трогаем
         ciphers=TLS_CIPHER_2001 // не трогаем
 
@@ -19,6 +18,7 @@ HOWTO:
         keystore=L:\\.keystore  // пусть к кейстору. Ображаем внимание на слэши для Windows.
         keystoreType=FloppyStore        //либо HDImageStore
 
+        clientauth=true         // true - для двусторонней аутентификации
         truststorePass=123456   // пароль к траст-стору
         truststore=L:\\.keystore        //пусть к траст-сторe. Также обращаем внимание на слэши.
 
