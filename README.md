@@ -32,6 +32,8 @@ HOWTO:
 
         asadmin> set configs.config.%CONFIG_NAME%.network-config.protocols.protocol.%LISTENER_NAME%.ssl.classname=by.iba.web.glassfish.GlassfishGostTLS
 
+Где %CONFIG_NAME% - имя конфига, а %LISTENER_NAME% - имя листенера.
+
 Либо то же самое,но в файле domain.xml (конфигурация домена Glassfish). В итоге в файле domain.xml будет что-то такое:
 
           <protocol security-enabled="true" name="http-listener-2">
