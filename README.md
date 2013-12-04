@@ -41,6 +41,8 @@ HOWTO:
             <ssl classname="by.iba.web.glassfish.GlassfishGostTLS" client-auth-enabled="true"></ssl>
           </protocol>
 
+        client-auth-enabled="true" - это для двусторонней аутентификации
+
 4) Обязательно добавить следующие параметры:
 
         <jvm-options>-Djavax.net.ssl.keyStore=L:/.keystore</jvm-options>
