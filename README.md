@@ -11,9 +11,16 @@ HOWTO:
 
 3) Указать имя класса для listener-a:
 
-        asadmin> set configs.config.config-name.network-config.protocols.protocol.listener-name.ssl.classname=by.iba.megafon.web.glassfish.GlassfishGostTLS
+        asadmin> set configs.config.config-name.network-config.protocols.protocol.listener-name.ssl.classname=by.iba.web.glassfish.GlassfishGostTLS
 
-Либо то же самое,но в файле domain.xml (конфигурация домена Glassfish).
+Либо то же самое,но в файле domain.xml (конфигурация домена Glassfish). В итоге в файле domain.xml будет что-то такое:
+
+          <protocol security-enabled="true" name="http-listener-2">
+            <http default-virtual-server="server" max-connections="250">
+              <file-cache></file-cache>
+            </http>
+            <ssl classname="by.iba.web.glassfish.GlassfishGostTLS" client-auth-enabled="true"></ssl>
+          </protocol>
 
 4) Обязательно добавить следующие параметры:
 
