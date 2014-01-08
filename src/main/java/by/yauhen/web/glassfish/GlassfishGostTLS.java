@@ -1,4 +1,4 @@
-package by.iba.megafon.web.glassfish;
+package by.yauhen.web.glassfish;
 
 import java.net.Socket;
 import java.util.Enumeration;
