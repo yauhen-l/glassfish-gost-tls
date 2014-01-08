@@ -40,7 +40,7 @@ HOWTO:
             <http default-virtual-server="server" max-connections="250">
               <file-cache></file-cache>
             </http>
-            <ssl classname="by.iba.web.glassfish.GlassfishGostTLS" client-auth-enabled="true"></ssl>
+            <ssl classname="by.yauhen.web.glassfish.GlassfishGostTLS" client-auth-enabled="true"></ssl>
           </protocol>
 
         client-auth-enabled="true" - это для двусторонней аутентификации
